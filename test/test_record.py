@@ -13,10 +13,8 @@ def app(request):
 
 
 def test_record(app):
-    app.open_homepage()
-    app.login(Group(username="roman2", password="222"))
+    app.session.login(Group(username="roman2", password="222"))
 
 
 def test_record2(app):
-    app.open_homepage()
-    app.login(Group(username="roman", password="123"))
+    app.session.login(Group(username="roman", password="123"))
